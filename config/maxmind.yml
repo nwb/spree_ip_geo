@@ -1,0 +1,8 @@
+# Be sure to restart your server when you modify this file.
+# your real file should be at your_app/config folder
+
+# maxmind account info
+
+default: &default
+   geo_ip_account_id  :   12345
+   geo_ip_key :   your_key
