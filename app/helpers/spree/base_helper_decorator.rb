@@ -1,10 +1,14 @@
 Spree::BaseHelper.module_eval do
     def country_id
-      Rails.cache.fetch("country_for_#{request.remote_ip}", :expires_in => 15.minutes) { country_from_ip(request.remote_ip).id rescue 214 }
+      country_from_ip(request.remote_ip).id rescue 214
     end
 
     def country_code
-      Rails.cache.fetch("country_code_for_#{request.remote_ip}", :expires_in => 15.minutes) { country_code_from_ip(request.remote_ip).id rescue 'US' }
+      country_code_from_ip(request.remote_ip).id rescue 'US'
+    end
+
+    def state_code
+      state_code_from_ip(request.remote_ip).id rescue ''
     end
 
     def country_from_ip(ip)

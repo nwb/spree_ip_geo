@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_ip_geo'
-  s.version     = '3.0.0'
+  s.version     = '3-0-stable'
   s.summary     = 'get coury id or code from its IP address with maxmind service.'
   s.description = 'This extension will get location information form Maxmind got the current request IP, and cache it in database. '
   s.required_ruby_version = '>= 2.0.0'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   version = '~> 3-0-stable'
-  s.add_dependency 'spree_core', version
+  s.add_dependency 'spree_core'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'

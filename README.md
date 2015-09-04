@@ -46,5 +46,6 @@ Simply add this require statement to your spec_helper:
 ```ruby
 require 'spree_ip_geo/factories'
 ```
+Contact albertliu at naturalwellbieng.com for bugs, issues.
 
 Copyright (c) 2015 naturalwellbeing.com, released under the New BSD License
