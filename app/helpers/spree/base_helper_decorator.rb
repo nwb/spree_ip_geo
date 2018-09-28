@@ -4,11 +4,11 @@ Spree::BaseHelper.module_eval do
     end
 
     def country_code
-      country_code_from_ip(request.remote_ip).id rescue 'US'
+      country_code_from_ip(request.remote_ip) rescue 'US'
     end
 
     def state_code
-      state_code_from_ip(request.remote_ip).id rescue ''
+      state_code_from_ip(request.remote_ip) rescue ''
     end
 
     def country_from_ip(ip)
